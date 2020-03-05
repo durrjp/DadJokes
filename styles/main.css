@@ -1,3 +1,5 @@
+@import "flipCard.css";
+
 .body {
     background-image: url("https://cdn.hipwallpaper.com/i/94/64/nhjsOp.jpg");
     background-repeat: no-repeat;
@@ -7,7 +9,6 @@
     
   
 }
-
 
 .flex {
     display: flex;
@@ -32,25 +33,33 @@
 
 .joke {
     border: solid black 1px;
-    width: 10em;
-    height: 15em;
+    width: 9em;
+    height: 13em;
     margin: 1em;
-    padding: .5em;
+    padding: .75em;
     background: white;
-    opacity: 0.8;
+    opacity: .9;
     transition: 0.2s;
     transform-style: preserve-3d;
     border-radius: 1em;
     color: black;
-    box-shadow:  1px 1px 2px black, 0 0 25px goldenrod, 0 0 5px black;
+    box-shadow:  1px 1px 2px black, 0 0 25px rgb(0, 238, 255), 0 0 5px black;
+    font-size: 1.3em;
+
     
 }
+
 .joke:hover {
     transform: scale(1.1, 1.1);
+    background-color: black;
+    /* color: rgb(0, 238, 255); */
+    color: white;
 }
+
 .joke:hover:after {
     opacity: 1;
 }
+
 .joke__Header {
     text-align: center;
     font-size: 2em;
