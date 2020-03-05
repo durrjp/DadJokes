@@ -1,3 +1,14 @@
+.body {
+    background-image: url("https://cdn.hipwallpaper.com/i/94/64/nhjsOp.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+  
+}
+
+
 .flex {
     display: flex;
     flex-flow: row wrap;
@@ -6,7 +17,9 @@
 .header {
     text-align: center;
     margin: 1em;
-    font-size: 2em;
+    font-size: 3em;
+    opacity: .9;
+    
 }
 
 .jokeContainer {
@@ -14,23 +27,28 @@
     align-content: center;
     margin: auto;
     width: 80%;
-    border: solid black 1px;
     justify-content: space-evenly;
-    background: black
 }
 
 .joke {
     border: solid black 1px;
     width: 10em;
-    height: 14em;
+    height: 15em;
     margin: 1em;
     padding: .5em;
-    background: lightcyan;
-    opacity: 0.2;
+    background: white;
+    opacity: 0.8;
     transition: 0.2s;
     transform-style: preserve-3d;
+    border-radius: 1em;
+    color: black;
+    box-shadow:  1px 1px 2px black, 0 0 25px goldenrod, 0 0 5px black;
+    
 }
 .joke:hover {
+    transform: scale(1.1, 1.1);
+}
+.joke:hover:after {
     opacity: 1;
 }
 .joke__Header {
